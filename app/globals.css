@@ -3,6 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Twitch brand tokens (light defaults) */
+  --twitch-bg: #0e0e10;
+  --twitch-border: #26262c;
+  --twitch-text: #efeff1;
+  --twitch-text-muted: #adadb8;
+  --twitch-purple: #9146ff;
+  --twitch-hover: #772ce8;
+  --twitch-input-bg: #1f1f23;
+  --twitch-placeholder: #8a8a9c;
 }
 
 @theme inline {
@@ -10,12 +20,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-twitch-bg: var(--twitch-bg);
+  --color-twitch-border: var(--twitch-border);
+  --color-twitch-text: var(--twitch-text);
+  --color-twitch-text-muted: var(--twitch-text-muted);
+  --color-twitch-purple: var(--twitch-purple);
+  --color-twitch-hover: var(--twitch-hover);
+  --color-twitch-input: var(--twitch-input-bg);
+  --color-twitch-placeholder: var(--twitch-placeholder);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-twitch-purple: #9146ff;
+    --color-twitch-black: #000000;
+    --color-twitch-ice: #f0f0ff;
+
   }
 }
 
